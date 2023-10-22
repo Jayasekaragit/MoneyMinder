@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Money Minder</string>
+    <string name="empoweing_financial">Empoweing Financial</string>
+    <string name="freedom">Freedom</string>
+    <string name="login">Login</string>
+    <string name="money_minder">Money Minder</string>
 </resources>
