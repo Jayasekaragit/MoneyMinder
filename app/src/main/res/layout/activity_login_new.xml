@@ -15,7 +15,6 @@
 
         <LinearLayout
             android:id="@+id/linearLayout2"
-            backgroun
             android:layout_width="390dp"
             android:layout_height="249dp"
             android:background="@color/myPrimary"
