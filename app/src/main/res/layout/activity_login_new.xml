@@ -14,13 +14,15 @@
         android:layout_weight="1" >
 
         <LinearLayout
+            android:id="@+id/linearLayout2"
             android:layout_width="390dp"
             android:layout_height="249dp"
             android:background="@color/myPrimary"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="0dp"
-            backgroun>
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -43,12 +45,15 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="392dp"
             android:layout_height="350dp"
             android:background="@color/myPrimary"
             android:orientation="horizontal"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="250dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -64,8 +69,39 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.297"
                     app:srcCompat="@drawable/user_icon" />
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="188dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="User name"
+                    android:inputType="text"
+                    android:padding="10dip"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    app:layout_constraintVertical_bias="0.242" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="168dp"
+                    android:layout_height="43dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.483"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView4"
+                    app:layout_constraintVertical_bias="0.785" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
