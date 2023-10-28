@@ -16,8 +16,11 @@
             android:name=".loginNew"
             android:exported="false" />
         <activity
+            android:name=".Addexpences"
+            android:exported="true" />
+        <activity
             android:name=".Welcome"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
