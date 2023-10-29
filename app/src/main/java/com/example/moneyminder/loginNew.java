@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextClock;
 
 public class loginNew extends AppCompatActivity {
     private EditText userNameEditText;
@@ -25,7 +24,7 @@ public class loginNew extends AppCompatActivity {
     private void registration(){
          userNameEditText=findViewById(R.id.userName);
          passEditText=findViewById(R.id.password);
-         btnLogin=findViewById(R.id.logBtn);
+         btnLogin=findViewById(R.id.getStartedBtn);
          btnSignUp=findViewById(R.id.signBtn);
 
          btnLogin.setOnClickListener(new View.OnClickListener() {
