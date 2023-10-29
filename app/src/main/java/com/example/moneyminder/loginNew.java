@@ -1,3 +1,6 @@
+/*
+Ashen Neththikumara
+ */
 package com.example.moneyminder;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,12 +11,13 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class loginNew extends AppCompatActivity {
     private EditText userNameEditText;
     private EditText passEditText;
     private Button btnLogin;
-    private Button btnSignUp;
+    private TextView btnSignUp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,11 +25,12 @@ public class loginNew extends AppCompatActivity {
 
         registration();
     }
+    /* registration onclick event for login button */
     private void registration(){
-         userNameEditText=findViewById(R.id.userName);
+         userNameEditText=findViewById(R.id.username);
          passEditText=findViewById(R.id.password);
-         btnLogin=findViewById(R.id.getStartedBtn);
-         btnSignUp=findViewById(R.id.signBtn);
+         btnLogin=findViewById(R.id.loginButton);
+         btnSignUp=findViewById(R.id.RedirectReg);
 
          btnLogin.setOnClickListener(new View.OnClickListener() {
              @Override
