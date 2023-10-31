@@ -1,0 +1,6 @@
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/myPrimary" />
+    <item android:drawable="@drawable/rounded_edittext" />
+
+</layer-list>
