@@ -6,4 +6,5 @@
     <color name="background">#FFFFFF</color>
     <color name="surface">#FFFFFF</color>
     <color name="secondary">#03DAC6</color>
+    <color name="purple">#8692f7</color>
 </resources>
