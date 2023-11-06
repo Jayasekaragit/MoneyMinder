@@ -9,9 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.moneyminder.databinding.ActivityLoginPageBinding;
+import com.example.moneyminder.databinding.ActivitySignupBinding;
 
 public class Login_page extends AppCompatActivity {
-
+    ActivityLoginPageBinding binding;
+    DatabaseHelper databaseHelper;
     private EditText userNameEditText;
     private EditText passEditText;
     private Button btnLogin;
@@ -20,41 +25,40 @@ public class Login_page extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_page);
+        binding = ActivityLoginPageBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        registration();
+        databaseHelper = new DatabaseHelper(this);
+
+        binding.loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = binding.emailLogin.getText().toString();
+                String password = binding.password.getText().toString();
+
+                if(email.equals("")|| password.equals("")){
+                    Toast.makeText(Login_page.this,"All feilds are mandatory",Toast.LENGTH_SHORT).show();
+                }else {
+                    Boolean checkCredentials = databaseHelper.checkEmailPassword(email,password);
+                    if(checkCredentials == true){
+                        Toast.makeText(Login_page.this,"Login Successfully",Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(getApplicationContext(), Addexpences.class);
+                        startActivity(intent);
+                    }
+                }
+
+            }
+
+        });
+        binding.RedirectReg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Login_page.this, Signup.class);
+            }
+        });
+
     }
 
     /* registration onclick event for login button */
-    private void registration() {
-        userNameEditText = findViewById(R.id.username);
-        passEditText = findViewById(R.id.password);
-        btnLogin = findViewById(R.id.loginButton);
-        btnSignUp = findViewById(R.id.RedirectReg);
 
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String userName = userNameEditText.getText().toString().trim();
-                String password = passEditText.getText().toString().trim();
-
-                if (TextUtils.isEmpty(userName)) {
-                    userNameEditText.setError("Email Required");
-                }
-
-                if (TextUtils.isEmpty(password)) {
-                    passEditText.setError("password Required");
-                }
-                if (userName.equals("dinuji") && password.equals("1234")) {
-                    startActivity(new Intent(Login_page.this, Addexpences.class));
-                }
-            }
-        });
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(Login_page.this, Signup.class));
-            }
-        });
-    };
 }

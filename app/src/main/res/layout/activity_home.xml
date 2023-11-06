@@ -6,192 +6,128 @@
     android:layout_height="match_parent"
     tools:context=".Home">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="406dp"
-        android:layout_height="406dp"
-        android:background="@drawable/combine_background"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-25dp">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="126dp"
-            android:layout_height="93dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.891"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.203"
-            app:srcCompat="@drawable/account" />
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:src="@drawable/head"
+            android:layout_marginTop="-50dp"
+            ></ImageView>
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="45dp"
-            android:layout_height="20dp"
-            android:text="Hi"
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.102"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.225" />
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="211dp"
-            android:layout_height="32dp"
-            android:text="this is your recent usage"
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.189"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.296" />
-
-        <EditText
-            android:id="@+id/name"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-name-"
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.243"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.22" />
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="55dp"
-            android:layout_height="44dp"
-            android:text="Rs."
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.321"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/expense"
-            android:layout_width="178dp"
-            android:layout_height="44dp"
-            android:text="-expence-"
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.736"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="170dp"
-            android:layout_height="29dp"
-            android:text="is spent out of "
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.156"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.583" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="180dp"
+                    android:text="Hi David"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25sp" />
 
-        <TextView
-            android:id="@+id/textView20"
-            android:layout_width="52dp"
-            android:layout_height="43dp"
-            android:text="Rs."
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="30sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.576"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.586" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Date"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp">
 
-        <EditText
-            android:id="@+id/income"
-            android:layout_width="130dp"
-            android:layout_height="32dp"
-            android:text="income"
-            android:textAlignment="gravity"
-            android:textColor="#F8F4F4"
-            android:textSize="15sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.942"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.601" />
+                </TextView>
+            </LinearLayout>
 
-        <Button
-            android:id="@+id/incomebutton"
-            android:layout_width="149dp"
-            android:layout_height="63dp"
-            android:text="INCOME"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.171"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.897" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="1dp"
+                android:text="this is your recent usage"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp">
 
-        <Button
-            android:id="@+id/expensebutton"
-            android:layout_width="149dp"
-            android:layout_height="63dp"
-            android:text="EXPENSES"
-            android:textSize="20dp"
-            android:textColor="@color/black"
-            android:backgroundTint="@color/white"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.879"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.897" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </TextView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="395dp"
-        android:layout_height="396dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_weight="1">
+            <TextView
+                android:id="@+id/MoneyMinder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome"
+                android:layout_centerHorizontal="true"
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_marginTop="100dp"
+                android:text="MONEY MINDER"
+                android:textColor="#FFFFFF"
+                android:textSize="45dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/income"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/MoneyMinder"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:text="is spent out of Rs. 25.000.00"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp" />
+
+
+            <Button
+                android:id="@+id/expensebutton"
+                android:layout_width="206dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/MoneyMinder"
+                android:layout_marginLeft="250dp"
+                android:layout_marginTop="139dp"
+                android:backgroundTint="#FDF6F6"
+                android:text="EXPENSES"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/incomebutton"
+                android:layout_width="149dp"
+                android:layout_height="63dp"
+
+                android:layout_below="@+id/MoneyMinder"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140dp"
+                android:backgroundTint="#FDF6F6"
+                android:text="INCOME"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="60dp">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
