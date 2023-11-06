@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     >
 
+    <!-- Title TextView -->
     <TextView
         android:id="@+id/topic"
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
         android:textSize="30dp"
         android:textStyle="bold" />
 
-
+    <!-- Image View for Account -->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="150dp"
@@ -30,6 +31,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="170dp" />
 
+    <!-- Email EditText -->
     <EditText
         android:id="@+id/emailLogin"
         android:layout_width="match_parent"
@@ -48,6 +50,7 @@
         android:textColorHint="#B7201E1E"
         android:textSize="20dp" />
 
+    <!-- Password EditText -->
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,6 +70,7 @@
         android:layout_marginRight="50dp"
         android:padding="18dp" />
 
+    <!-- Login Button -->
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
@@ -79,8 +83,9 @@
         android:layout_marginRight="100dp"
         android:layout_marginTop="530dp"
         android:backgroundTint="@color/myPrimary"
-        app:cornerRadius = "40dp"/>
+        app:cornerRadius="40dp" />
 
+    <!-- "Don't have an account?" TextView -->
     <TextView
         android:id="@+id/NoAccount"
         android:layout_width="wrap_content"
@@ -90,6 +95,7 @@
         android:layout_marginLeft="90dp"
         android:text="Don't have an account?" />
 
+    <!-- "Register Now" TextView (Clickable) -->
     <TextView
         android:id="@+id/RedirectReg"
         android:layout_width="wrap_content"
