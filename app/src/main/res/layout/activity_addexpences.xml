@@ -15,7 +15,7 @@
             android:id="@+id/linearLayout"
             android:layout_width="393dp"
             android:layout_height="151dp"
-            android:background="@color/myPrimary"
+            android:background="@color/purple"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,30 +30,19 @@
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="174dp"
+                    android:layout_height="46dp"
                     android:text="Add Expenses"
                     android:textColor="@color/white"
                     android:textSize="25sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.497"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.288" />
+                    app:layout_constraintVertical_bias="0.285" />
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:clickable="true"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/textView3"
-                    app:layout_constraintHorizontal_bias="0.59"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.115"
-                    app:srcCompat="@drawable/baseline_arrow_back_24" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
 
@@ -142,9 +131,10 @@
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.854"
+                        app:layout_constraintHorizontal_bias="0.906"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton7" />
+                        app:layout_constraintTop_toBottomOf="@+id/floatingActionButton7"
+                        app:layout_constraintVertical_bias="1.0" />
 
                     <TextView
                         android:id="@+id/textView9"
@@ -157,7 +147,7 @@
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toEndOf="@+id/textView8"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.574" />
+                        app:layout_constraintVertical_bias="0.61" />
 
                     <TextView
                         android:id="@+id/textView6"
@@ -278,10 +268,10 @@
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/textView12"
-                        app:layout_constraintHorizontal_bias="0.608"
+                        app:layout_constraintHorizontal_bias="0.481"
                         app:layout_constraintStart_toEndOf="@+id/textView7"
                         app:layout_constraintTop_toBottomOf="@+id/home"
-                        app:layout_constraintVertical_bias="0.714" />
+                        app:layout_constraintVertical_bias="0.785" />
 
                     <TextView
                         android:id="@+id/textView11"
@@ -312,8 +302,8 @@
                     <Space
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:layout_editor_absoluteX="143dp"
-                        tools:layout_editor_absoluteY="110dp" />
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        tools:layout_editor_absoluteX="143dp" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </LinearLayout>
 
@@ -323,24 +313,18 @@
                 android:layout_height="1dp"
                 android:background="?android:attr/listDivider" />
 
-            <Button
-                android:id="@+id/addBtn"
-                android:layout_width="337dp"
-                android:layout_height="75dp"
-                android:layout_gravity="center"
-                android:text="Add"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
-                android:id="@+id/expensebutton"
-                android:layout_width="327dp"
-                android:layout_height="75dp"
+                android:id="@+id/addBtn"
+                android:layout_width="231dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/purple"
+                android:text="Add"
                 android:layout_gravity="center"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:text="View Expenses"
-                app:layout_constraintStart_toStartOf="parent" />
+                android:textSize="24sp"
+                app:cornerRadius="20dp" />
+            <!-- Button for the signup action -->
 
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

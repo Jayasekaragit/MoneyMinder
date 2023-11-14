@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
                     android:layout_marginTop="180dp"
-                    android:text="Hi David"
+                    android:text="Hi Dilupa"
                     android:textColor="#FFFFFF"
                     android:textSize="25sp" />
 
@@ -89,15 +89,20 @@
 
             <Button
                 android:id="@+id/expensebutton"
-                android:layout_width="206dp"
-                android:layout_height="wrap_content"
+                android:layout_width="146dp"
+                android:layout_height="64dp"
                 android:layout_below="@+id/MoneyMinder"
-                android:layout_marginLeft="250dp"
-                android:layout_marginTop="139dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="137dp"
+
+                android:layout_marginEnd="26dp"
                 android:backgroundTint="#FDF6F6"
+                android:rotationY="4"
                 android:text="EXPENSES"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -108,11 +113,12 @@
 
                 android:layout_below="@+id/MoneyMinder"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="140dp"
+                android:layout_marginTop="137dp"
                 android:backgroundTint="#FDF6F6"
                 android:text="INCOME"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 

@@ -70,13 +70,7 @@ public class Addexpences extends AppCompatActivity {
                 appendedText = "Home";
             }
         });
-        binding.expensebutton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Addexpences.this, ExpensesActivity.class));
 
-            }
-        });
     }
 
 
